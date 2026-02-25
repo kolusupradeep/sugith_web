@@ -1,20 +1,20 @@
 import React from "react";
 import "@/App.css";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Courses from "./components/Courses";
-import Categories from "./components/Categories";
-import Testimonials from "./components/Testimonials";
+import StunningHeader from "./components/StunningHeader";
+import StunningHero from "./components/StunningHero";
+import TrendingCourses from "./components/TrendingCourses";
+import KeyFeaturesStats from "./components/KeyFeaturesStats";
+import StunningTestimonials from "./components/StunningTestimonials";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <Courses />
-      <Categories />
-      <Testimonials />
+      <StunningHeader />
+      <StunningHero />
+      <TrendingCourses />
+      <KeyFeaturesStats />
+      <StunningTestimonials />
       <Footer />
     </div>
   );

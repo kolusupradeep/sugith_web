@@ -1,4 +1,4 @@
-/* Stunning Black & Orange Theme - Premium Training Platform */
+/* 🌿 Professional Minimalist Theme - Light & Green */
 * {
   margin: 0;
   padding: 0;
@@ -6,29 +6,34 @@
 }
 
 :root {
-  /* Backgrounds */
-  --bg-primary: #000000;
-  --bg-secondary: #0A0A0A;
-  --bg-card: #0F0F0F;
-  --bg-elevated: #151515;
+  /* Backgrounds - Clean & Minimal */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8F9FA;
+  --bg-card: #FFFFFF;
+  --bg-elevated: #FAFBFC;
   
-  /* Orange Brand Colors */
-  --brand-primary: #FF6B35;
-  --brand-secondary: #FF8C42;
-  --brand-dark: #E55A2B;
-  --brand-light: #FFA366;
-  --brand-glow: rgba(255, 107, 53, 0.5);
+  /* Brand Colors - Soft Green Accent */
+  --brand-primary: #94bf94;
+  --brand-secondary: #7fb07f;
+  --brand-light: #a8cfa8;
+  --brand-dark: #6fa76f;
+  --brand-subtle: rgba(148, 191, 148, 0.08);
   
-  /* Text */
-  --text-primary: #FFFFFF;
-  --text-secondary: rgba(255, 255, 255, 0.85);
-  --text-muted: #999999;
-  --text-dim: #666666;
+  /* Text - Dark & Professional */
+  --text-primary: #2D3748;
+  --text-secondary: #4A5568;
+  --text-muted: #718096;
+  --text-light: #A0AEC0;
   
-  /* Borders */
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-medium: rgba(255, 255, 255, 0.15);
-  --border-bright: rgba(255, 107, 53, 0.3);
+  /* Borders - Subtle & Clean */
+  --border-color: #E2E8F0;
+  --border-light: #EDF2F7;
+  --border-dark: #CBD5E0;
+  
+  /* Shadows - Soft & Elegant */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 * {

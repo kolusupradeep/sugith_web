@@ -1,0 +1,247 @@
+.professional-courses {
+  background: var(--bg-primary);
+}
+
+.section-header-pro {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.section-title-pro {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle-pro {
+  font-size: 17px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.courses-grid-pro {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+}
+
+.course-card-pro {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.course-card-pro:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--brand-primary);
+}
+
+.card-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.course-card-pro:hover .card-accent {
+  opacity: 1;
+}
+
+.course-header-pro {
+  padding: 20px 20px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.course-icon-pro {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.icon-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.12;
+}
+
+.icon-text {
+  position: relative;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--brand-color);
+  z-index: 1;
+}
+
+.course-rating-pro {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: var(--bg-elevated);
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.course-body-pro {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.course-category-pro {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.course-title-pro {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.course-description-pro {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+  flex: 1;
+}
+
+.course-meta-pro {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 12px;
+  margin-top: 8px;
+  border-top: 1px solid var(--border-light);
+}
+
+.meta-item-pro {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.meta-item-pro svg {
+  color: var(--brand-primary);
+}
+
+.course-actions-pro {
+  padding: 0 20px 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-demo-pro,
+.btn-enroll-pro {
+  flex: 1;
+  padding: 11px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-demo-pro {
+  background: #FFFFFF;
+}
+
+.btn-demo-pro:hover {
+  background: var(--brand-color);
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-enroll-pro {
+  color: #FFFFFF;
+  border-color: var(--brand-color);
+}
+
+.btn-enroll-pro:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .courses-grid-pro {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .section-title-pro {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-grid-pro {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .section-title-pro {
+    font-size: 28px;
+  }
+
+  .section-subtitle-pro {
+    font-size: 16px;
+  }
+
+  .course-card-pro {
+    border-radius: 10px;
+  }
+
+  .course-actions-pro {
+    flex-direction: column;
+  }
+
+  .btn-demo-pro,
+  .btn-enroll-pro {
+    flex: unset;
+    width: 100%;
+  }
+}

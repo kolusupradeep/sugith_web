@@ -1,4 +1,4 @@
-/* 🌿 Professional Minimalist Theme - Light & Green */
+/* 🚀 TECH PREMIUM THEME - Navy • Purple • Cyan */
 * {
   margin: 0;
   padding: 0;
@@ -6,34 +6,37 @@
 }
 
 :root {
-  /* Backgrounds - Clean & Minimal */
-  --bg-primary: #FFFFFF;
-  --bg-secondary: #F8F9FA;
-  --bg-card: #FFFFFF;
-  --bg-elevated: #FAFBFC;
+  /* Tech Premium Backgrounds */
+  --bg-primary: #0A1929;
+  --bg-secondary: #0F1E30;
+  --bg-card: #132337;
+  --bg-elevated: #1A2942;
+  --bg-glass: rgba(19, 35, 55, 0.7);
   
-  /* Brand Colors - Soft Green Accent */
-  --brand-primary: #94bf94;
-  --brand-secondary: #7fb07f;
-  --brand-light: #a8cfa8;
-  --brand-dark: #6fa76f;
-  --brand-subtle: rgba(148, 191, 148, 0.08);
+  /* Premium Brand Colors */
+  --brand-primary: #6366F1;
+  --brand-secondary: #818CF8;
+  --brand-cyan: #06B6D4;
+  --brand-purple: #A855F7;
+  --brand-gradient: linear-gradient(135deg, #6366F1 0%, #A855F7 50%, #06B6D4 100%);
   
-  /* Text - Dark & Professional */
-  --text-primary: #2D3748;
-  --text-secondary: #4A5568;
-  --text-muted: #718096;
-  --text-light: #A0AEC0;
+  /* Text - High Contrast */
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --text-dim: #64748B;
   
-  /* Borders - Subtle & Clean */
-  --border-color: #E2E8F0;
-  --border-light: #EDF2F7;
-  --border-dark: #CBD5E0;
+  /* Borders - Subtle Glow */
+  --border-color: rgba(99, 102, 241, 0.2);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(99, 102, 241, 0.4);
   
-  /* Shadows - Soft & Elegant */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+  /* Premium Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.3);
+  --shadow-cyan: 0 0 40px rgba(6, 182, 212, 0.3);
 }
 
 * {
@@ -44,74 +47,112 @@
 body {
   background: var(--bg-primary);
   color: var(--text-primary);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .App {
   min-height: 100vh;
   background: var(--bg-primary);
+  position: relative;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* 💊 Professional Pill-Shaped Buttons */
+/* ✨ Premium Gradient Buttons */
 .btn-primary {
   position: relative;
-  background: var(--brand-primary);
+  background: var(--brand-gradient);
   color: #FFFFFF;
   border: none;
   border-radius: 50px;
-  padding: 12px 28px;
-  font-size: 14px;
+  padding: 14px 32px;
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   letter-spacing: 0.3px;
-  box-shadow: 0 2px 8px rgba(148, 191, 148, 0.25);
+  box-shadow: var(--shadow-glow);
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.6s;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
 }
 
 .btn-primary:hover {
-  background: var(--brand-dark);
-  box-shadow: 0 4px 16px rgba(148, 191, 148, 0.35);
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.5);
 }
 
 .btn-secondary {
-  background: #FFFFFF;
-  color: var(--brand-primary);
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--brand-secondary);
   border: 2px solid var(--brand-primary);
   border-radius: 50px;
-  padding: 10px 28px;
-  font-size: 14px;
+  padding: 12px 32px;
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   letter-spacing: 0.3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-secondary::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: var(--brand-primary);
+  transform: translate(-50%, -50%);
+  transition: width 0.4s, height 0.4s;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.btn-secondary:hover::before {
+  width: 300%;
+  height: 300%;
+}
+
+.btn-secondary span {
+  position: relative;
+  z-index: 1;
 }
 
 .btn-secondary:hover {
-  background: var(--brand-primary);
   color: #FFFFFF;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(148, 191, 148, 0.25);
-}
-
-.btn-small {
-  padding: 8px 20px;
-  font-size: 13px;
+  border-color: var(--brand-secondary);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-glow);
 }
 
 /* 🎨 Professional Animations */

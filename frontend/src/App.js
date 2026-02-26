@@ -1,17 +1,17 @@
 import React from "react";
 import "@/App.css";
-import MinimalHeader from "./components/MinimalHeader";
-import MinimalHero from "./components/MinimalHero";
-import ProfessionalCourses from "./components/ProfessionalCourses";
+import PremiumHeader from "./components/PremiumHeader";
+import PremiumHero from "./components/PremiumHero";
+import StunningCourses from "./components/StunningCourses";
 import FeaturesStats from "./components/FeaturesStats";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <MinimalHeader />
-      <MinimalHero />
-      <ProfessionalCourses />
+      <PremiumHeader />
+      <PremiumHero />
+      <StunningCourses />
       <FeaturesStats />
       <Footer />
     </div>

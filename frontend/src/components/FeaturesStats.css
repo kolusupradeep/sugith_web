@@ -1,0 +1,115 @@
+.features-section {
+  background: var(--bg-secondary);
+}
+
+.features-grid-minimal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.feature-card-minimal {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: all 0.3s;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.feature-card-minimal:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--brand-primary);
+}
+
+.feature-icon-minimal {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--brand-subtle);
+  border-radius: 50%;
+  color: var(--brand-primary);
+  transition: all 0.3s;
+}
+
+.feature-card-minimal:hover .feature-icon-minimal {
+  background: var(--brand-primary);
+  color: #FFFFFF;
+  transform: scale(1.1);
+}
+
+.feature-title-minimal {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.feature-desc-minimal {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.stats-section {
+  background: var(--bg-primary);
+  padding: 60px 0;
+}
+
+.stats-grid-minimal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+  text-align: center;
+}
+
+.stat-card-minimal {
+  padding: 24px;
+}
+
+.stat-number-minimal {
+  font-size: 44px;
+  font-weight: 900;
+  color: var(--brand-primary);
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.stat-label-minimal {
+  font-size: 15px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .features-grid-minimal {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .feature-card-minimal {
+    padding: 24px 20px;
+  }
+
+  .stats-grid-minimal {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .stat-number-minimal {
+    font-size: 36px;
+  }
+
+  .stat-label-minimal {
+    font-size: 13px;
+  }
+}

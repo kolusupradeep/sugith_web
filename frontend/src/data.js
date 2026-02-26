@@ -1,4 +1,4 @@
-// Enhanced course data with REAL brand colors and identities
+// Premium course data with COMPREHENSIVE information
 
 export const courses = [
   {
@@ -6,133 +6,223 @@ export const courses = [
     title: "Salesforce Training",
     description: "Master the world's #1 CRM platform with hands-on training",
     rating: 4.8,
+    reviews: 2847,
     students: 2671,
     duration: "30 Hrs",
+    lectures: 45,
+    projects: 8,
+    quizzes: 12,
     brandColor: "#00A1E0",
-    icon: "salesforce",
-    category: "CRM"
+    brandColorLight: "#E3F5FF",
+    category: "CRM",
+    level: "Intermediate",
+    trending: true,
+    bestseller: false,
+    instructor: {
+      name: "Sarah Johnson",
+      title: "Salesforce MVP",
+      avatar: "https://i.pravatar.cc/150?img=5"
+    },
+    nextBatch: "Jan 5, 2025",
+    certificate: true,
+    languages: ["English", "Spanish"],
+    originalPrice: 699,
+    price: 499,
+    completionRate: 94,
+    enrolledThisWeek: 143,
+    whatYouLearn: [
+      "Salesforce Administration & Configuration",
+      "Custom Objects & Fields",
+      "Process Automation with Flow",
+      "Reports & Dashboards Mastery"
+    ],
+    partner: "Salesforce Official Partner"
   },
   {
     id: 2,
     title: "AWS Cloud Training",
     description: "Build, deploy and scale applications on Amazon Web Services",
     rating: 4.9,
+    reviews: 4892,
     students: 4521,
     duration: "35 Hrs",
+    lectures: 52,
+    projects: 10,
+    quizzes: 15,
     brandColor: "#FF9900",
-    icon: "aws",
-    category: "Cloud"
+    brandColorLight: "#FFF3E0",
+    category: "Cloud",
+    level: "Advanced",
+    trending: true,
+    bestseller: true,
+    instructor: {
+      name: "Michael Chen",
+      title: "AWS Solutions Architect",
+      avatar: "https://i.pravatar.cc/150?img=12"
+    },
+    nextBatch: "Dec 28, 2024",
+    certificate: true,
+    languages: ["English", "Hindi"],
+    originalPrice: 799,
+    price: 599,
+    completionRate: 96,
+    enrolledThisWeek: 289,
+    whatYouLearn: [
+      "AWS Core Services (EC2, S3, RDS)",
+      "Serverless Architecture",
+      "DevOps on AWS",
+      "AWS Security Best Practices"
+    ],
+    partner: "AWS Training Partner"
   },
   {
     id: 3,
     title: "Azure Training",
     description: "Microsoft Azure cloud solutions and enterprise integration",
     rating: 4.7,
+    reviews: 3421,
     students: 3184,
     duration: "30 Hrs",
+    lectures: 48,
+    projects: 7,
+    quizzes: 10,
     brandColor: "#0078D4",
-    icon: "azure",
-    category: "Cloud"
+    brandColorLight: "#E5F3FF",
+    category: "Cloud",
+    level: "Intermediate",
+    trending: false,
+    bestseller: true,
+    instructor: {
+      name: "Emma Williams",
+      title: "Azure DevOps Expert",
+      avatar: "https://i.pravatar.cc/150?img=9"
+    },
+    nextBatch: "Jan 8, 2025",
+    certificate: true,
+    languages: ["English"],
+    originalPrice: 699,
+    price: 499,
+    completionRate: 92,
+    enrolledThisWeek: 167,
+    whatYouLearn: [
+      "Azure Fundamentals & Architecture",
+      "Virtual Machines & Networking",
+      "Azure DevOps Pipelines",
+      "Azure AI Services Integration"
+    ],
+    partner: "Microsoft Certified Partner"
   },
   {
     id: 4,
     title: "Python Programming",
     description: "Learn Python for data science, web development and automation",
     rating: 4.9,
+    reviews: 5892,
     students: 5234,
     duration: "40 Hrs",
+    lectures: 65,
+    projects: 12,
+    quizzes: 18,
     brandColor: "#3776AB",
+    brandColorLight: "#E3F2FD",
     secondaryColor: "#FFD43B",
-    icon: "python",
-    category: "Programming"
+    category: "Programming",
+    level: "Beginner",
+    trending: true,
+    bestseller: true,
+    instructor: {
+      name: "Dr. Raj Kumar",
+      title: "Python Core Developer",
+      avatar: "https://i.pravatar.cc/150?img=14"
+    },
+    nextBatch: "Dec 30, 2024",
+    certificate: true,
+    languages: ["English", "Hindi", "Spanish"],
+    originalPrice: 649,
+    price: 449,
+    completionRate: 97,
+    enrolledThisWeek: 412,
+    whatYouLearn: [
+      "Python Fundamentals & OOP",
+      "Data Analysis with Pandas",
+      "Web Development with Django",
+      "Automation & Scripting"
+    ],
+    partner: "PSF Certified Training"
   },
   {
     id: 5,
     title: "MuleSoft Training",
     description: "API-led connectivity and integration platform mastery",
     rating: 4.8,
+    reviews: 1876,
     students: 1611,
     duration: "22 Hrs",
+    lectures: 38,
+    projects: 6,
+    quizzes: 8,
     brandColor: "#00A0DF",
-    icon: "mulesoft",
-    category: "Integration"
+    brandColorLight: "#E0F7FF",
+    category: "Integration",
+    level: "Advanced",
+    trending: false,
+    bestseller: false,
+    instructor: {
+      name: "James Rodriguez",
+      title: "MuleSoft Architect",
+      avatar: "https://i.pravatar.cc/150?img=8"
+    },
+    nextBatch: "Jan 12, 2025",
+    certificate: true,
+    languages: ["English"],
+    originalPrice: 899,
+    price: 699,
+    completionRate: 91,
+    enrolledThisWeek: 87,
+    whatYouLearn: [
+      "Anypoint Platform Overview",
+      "API Design & Development",
+      "DataWeave Transformations",
+      "MuleSoft Integration Patterns"
+    ],
+    partner: "MuleSoft Official Partner"
   },
   {
     id: 6,
     title: "Machine Learning",
     description: "Build intelligent systems with ML algorithms and frameworks",
     rating: 4.8,
+    reviews: 3567,
     students: 3124,
     duration: "45 Hrs",
+    lectures: 58,
+    projects: 10,
+    quizzes: 14,
     brandColor: "#76B900",
-    icon: "ml",
-    category: "AI/ML"
-  },
-  {
-    id: 7,
-    title: "DevOps Engineering",
-    description: "CI/CD, Docker, Kubernetes and infrastructure automation",
-    rating: 4.7,
-    students: 2890,
-    duration: "32 Hrs",
-    brandColor: "#326CE5",
-    icon: "devops",
-    category: "DevOps"
-  },
-  {
-    id: 8,
-    title: "Cybersecurity",
-    description: "Protect systems and data from cyber threats and attacks",
-    rating: 4.8,
-    students: 2456,
-    duration: "38 Hrs",
-    brandColor: "#E50914",
-    icon: "security",
-    category: "Security"
-  },
-  {
-    id: 9,
-    title: "Data Analytics",
-    description: "Transform data into actionable insights with analytics tools",
-    rating: 4.7,
-    students: 3567,
-    duration: "36 Hrs",
-    brandColor: "#EA4335",
-    icon: "analytics",
-    category: "Data"
-  },
-  {
-    id: 10,
-    title: "Google Cloud Platform",
-    description: "Build and scale apps on Google's infrastructure",
-    rating: 4.8,
-    students: 2789,
-    duration: "33 Hrs",
-    brandColor: "#4285F4",
-    icon: "gcp",
-    category: "Cloud"
-  },
-  {
-    id: 11,
-    title: "ServiceNow",
-    description: "IT service management and workflow automation platform",
-    rating: 4.7,
-    students: 4238,
-    duration: "27 Hrs",
-    brandColor: "#62D84E",
-    icon: "servicenow",
-    category: "ITSM"
-  },
-  {
-    id: 12,
-    title: "Workday Training",
-    description: "Enterprise cloud applications for finance and HR",
-    rating: 4.7,
-    students: 2175,
-    duration: "40 Hrs",
-    brandColor: "#F57C00",
-    icon: "workday",
-    category: "ERP"
+    brandColorLight: "#F1F8E9",
+    category: "AI/ML",
+    level: "Advanced",
+    trending: true,
+    bestseller: true,
+    instructor: {
+      name: "Dr. Priya Sharma",
+      title: "AI Research Scientist",
+      avatar: "https://i.pravatar.cc/150?img=10"
+    },
+    nextBatch: "Jan 2, 2025",
+    certificate: true,
+    languages: ["English", "Hindi"],
+    originalPrice: 899,
+    price: 699,
+    completionRate: 89,
+    enrolledThisWeek: 234,
+    whatYouLearn: [
+      "ML Algorithms & Theory",
+      "Deep Learning with TensorFlow",
+      "NLP & Computer Vision",
+      "Model Deployment & MLOps"
+    ],
+    partner: "Google ML Partner"
   }
 ];
 

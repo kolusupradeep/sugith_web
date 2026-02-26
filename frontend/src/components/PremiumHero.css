@@ -118,14 +118,20 @@
   text-shadow: 0 0 80px rgba(99, 102, 241, 0.3);
 }
 
-.courses-link {
+.courses-link-visible {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 200%;
   text-decoration: none;
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease;
+  display: inline-block;
 }
 
-.courses-link::after {
+.courses-link-visible::after {
   content: '';
   position: absolute;
   bottom: 2px;
@@ -133,11 +139,11 @@
   width: 100%;
   height: 3px;
   background: var(--brand-gradient);
-  opacity: 0.5;
+  opacity: 0.6;
   transition: opacity 0.3s;
 }
 
-.courses-link:hover::after {
+.courses-link-visible:hover::after {
   opacity: 1;
 }
 

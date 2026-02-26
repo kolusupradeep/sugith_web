@@ -21,7 +21,7 @@ const PremiumHero = () => {
           </div>
 
           <h1 className="hero-title-premium animate-fadeInUp">
-            We have got <a href="#courses" className="text-gradient courses-link">Courses</a> to create
+            We have got <a href="#courses" className="courses-link-visible">Courses</a> to create
             <br />
             career-changing opportunities for you
           </h1>

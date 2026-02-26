@@ -118,6 +118,29 @@
   text-shadow: 0 0 80px rgba(99, 102, 241, 0.3);
 }
 
+.courses-link {
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.courses-link::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--brand-gradient);
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.courses-link:hover::after {
+  opacity: 1;
+}
+
 .hero-subtitle-premium {
   font-size: 19px;
   line-height: 1.7;

@@ -86,13 +86,25 @@ const EliteCourseCard = ({ course, index }) => {
           </div>
         </div>
 
-        <button 
-          className="btn-enroll-elite"
-          style={{ background: course.brandColor }}
-        >
-          Enroll Now
-          <ArrowRight size={18} />
-        </button>
+        <div className="card-actions-elite">
+          <button 
+            className="btn-demo-elite"
+            style={{ 
+              background: `linear-gradient(135deg, ${course.brandColor}15, ${course.brandColor}25)`,
+              borderColor: course.brandColor,
+              color: course.brandColor
+            }}
+          >
+            Get Demo
+          </button>
+          <button 
+            className="btn-enroll-elite"
+            style={{ background: course.brandColor }}
+          >
+            Enroll Now
+            <ArrowRight size={18} />
+          </button>
+        </div>
       </div>
     </div>
   );

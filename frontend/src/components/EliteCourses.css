@@ -182,8 +182,8 @@
 /* Footer */
 .card-footer-elite {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
   padding-top: 24px;
   border-top: 1px solid var(--border-subtle);
 }
@@ -217,11 +217,59 @@
   font-weight: 600;
 }
 
-.btn-enroll-elite {
+.card-actions-elite {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-demo-elite {
+  flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 14px 28px;
+  padding: 14px 24px;
+  border: 2px solid;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-demo-elite::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: currentColor;
+  opacity: 0.15;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s, height 0.4s;
+  border-radius: 50%;
+}
+
+.btn-demo-elite:hover::before {
+  width: 300%;
+  height: 300%;
+}
+
+.btn-demo-elite:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn-enroll-elite {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 24px;
   border: none;
   border-radius: 12px;
   color: #FFFFFF;
@@ -268,13 +316,15 @@
   }
 
   .card-footer-elite {
-    flex-direction: column;
     gap: 16px;
-    align-items: stretch;
   }
 
+  .card-actions-elite {
+    flex-direction: column;
+  }
+
+  .btn-demo-elite,
   .btn-enroll-elite {
     width: 100%;
-    justify-content: center;
   }
 }

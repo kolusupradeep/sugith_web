@@ -78,14 +78,6 @@ const EliteCourseCard = ({ course, index }) => {
 
       {/* Clean Footer */}
       <div className="card-footer-elite">
-        <div className="price-section-elite">
-          <div className="price-main" style={{ color: course.brandColor }}>${course.price}</div>
-          <div className="price-sub">
-            <span className="price-old">${course.originalPrice}</span>
-            <span className="price-save">Save ${course.originalPrice - course.price}</span>
-          </div>
-        </div>
-
         <div className="card-actions-elite">
           <button 
             className="btn-demo-elite"

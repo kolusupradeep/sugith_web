@@ -155,11 +155,12 @@ html {
   box-shadow: var(--shadow-glow);
 }
 
-/* 🎨 Professional Animations */
+
+/* 🎨 Premium Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(25px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -175,7 +176,7 @@ html {
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-30px);
   }
   to {
     opacity: 1;
@@ -183,39 +184,79 @@ html {
   }
 }
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: var(--shadow-glow);
+  }
+  50% {
+    box-shadow: 0 0 60px rgba(99, 102, 241, 0.5);
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .animate-fadeInUp {
-  animation: fadeInUp 0.6s ease-out forwards;
+  animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .animate-fadeIn {
-  animation: fadeIn 0.8s ease-out forwards;
+  animation: fadeIn 1s ease-out forwards;
 }
 
-/* 🎯 Utility Classes */
+/* 🎯 Glassmorphism */
+.glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-subtle);
+}
+
+/* ✨ Gradient Text */
 .text-gradient {
-  background: linear-gradient(135deg, var(--brand-primary), var(--brand-dark));
+  background: var(--brand-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
 }
 
+/* 📦 Container */
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
 .section {
-  padding: 80px 0;
-}
-
-.section-alt {
-  background: var(--bg-secondary);
+  padding: 100px 0;
+  position: relative;
 }
 
 @media (max-width: 1024px) {
   .section {
-    padding: 60px 0;
+    padding: 80px 0;
   }
 }
 
@@ -224,11 +265,11 @@ html {
     padding: 0 16px;
   }
   .section {
-    padding: 48px 0;
+    padding: 60px 0;
   }
   .btn-primary, .btn-secondary {
-    padding: 10px 24px;
-    font-size: 13px;
+    padding: 12px 28px;
+    font-size: 14px;
   }
 }
 

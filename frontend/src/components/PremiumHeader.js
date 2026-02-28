@@ -26,12 +26,11 @@ const PremiumHeader = () => {
       <div className="header-glow-line"></div>
       <div className="premium-header-container">
         <div className="premium-logo">
-          <div className="logo-hexagon">
-            <Sparkles size={20} />
-          </div>
-          <span className="logo-text-premium">
-            MIND<span className="logo-accent-premium">MAJIX</span>
-          </span>
+          <img 
+            src="https://customer-assets.emergentagent.com/job_elite-tech-hub-2/artifacts/o248j8a8_1.png" 
+            alt="Conquer Waves" 
+            className="logo-image"
+          />
         </div>
 
         <nav className="premium-nav desktop-nav">
@@ -44,6 +43,10 @@ const PremiumHeader = () => {
         </nav>
 
         <div className="premium-actions desktop-actions">
+          <a href="tel:+919177215915" className="phone-link-premium">
+            <Phone size={16} />
+            <span>+91 91772 15915</span>
+          </a>
           <button className="btn-secondary">
             <span>Sign In</span>
           </button>

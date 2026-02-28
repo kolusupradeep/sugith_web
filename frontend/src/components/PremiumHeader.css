@@ -55,7 +55,7 @@
 }
 
 .logo-image {
-  height: 64px;
+  height: 80px;
   width: auto;
   object-fit: contain;
 }
@@ -181,6 +181,6 @@
   }
   
   .logo-image {
-    height: 52px;
+    height: 60px;
   }
 }

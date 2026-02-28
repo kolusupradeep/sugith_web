@@ -179,4 +179,8 @@
   .mobile-nav-link-premium:hover {
     color: var(--brand-cyan);
   }
+  
+  .logo-image {
+    height: 40px;
+  }
 }

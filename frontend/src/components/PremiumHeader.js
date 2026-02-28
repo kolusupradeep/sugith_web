@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X, Sparkles, Phone } from 'lucide-react';
 import './PremiumHeader.css';
 
 const PremiumHeader = () => {

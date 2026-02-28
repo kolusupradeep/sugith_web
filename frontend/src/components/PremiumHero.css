@@ -5,6 +5,7 @@
   align-items: center;
   padding: 140px 0 100px;
   overflow: hidden;
+  background: var(--bg-primary);
 }
 
 .hero-animated-bg {
@@ -14,6 +15,7 @@
   right: 0;
   bottom: 0;
   z-index: 0;
+  opacity: 0.3;
 }
 
 .gradient-orb {
